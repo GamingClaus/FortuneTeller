@@ -152,7 +152,7 @@ public class UserFrame extends JFrame implements ActionListener,KeyListener {
             try {
                 JTextArea resultarea = new JTextArea();
                 String horoscopeData = horoscopeApi.horoscopefetcher(sign, day);
-                resultarea.setText( sign + " " + day +"'s Horoscope: \n" +horoscopeData);
+                resultarea.setText( sign + " " + day +"'s Horoscope: \n>" +horoscopeData);
                 resultarea.setFont(new Font("Arial",Font.PLAIN,20));
                 resultarea.setOpaque(true);
                 resultarea.setEditable(false);
